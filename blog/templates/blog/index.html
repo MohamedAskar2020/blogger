@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/css/main.css' %}" />
+    <link rel="shortcut icon" href="{% static 'blog/images/favicon.ico' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- start Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'blog/images/mim.png' %}" alt="شعار" width="35px">
+          مدونة</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >الرئيسية <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                دوراتي
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">دورة بايثون</a>
+                <a class="dropdown-item" href="#">دورة دجانجو</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">دورة ويندوز</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">من أنا</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">تسجيل الدخول</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">تسجيل</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+    <div class="">
+      <i class="fas fa-home"></i>
+      أهلا و مرحبا بكم
+    </div>
+    <script type="" src="{% static 'blog/js/jquery-3.3.1.slim.min.js' %}"></script>
+    <script type="" src="{% static 'blog/js/popper.min' %}"></script>
+    <script type="" src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+    <script
+      type=""
+      src="{% static 'blog/js/fontawesome-all.min.js' %}"
+    ></script>
+  </body>
+</html>

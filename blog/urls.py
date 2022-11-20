@@ -7,5 +7,6 @@ app_name = 'blog'
 
 urlpatterns =[
     
-    #path('',),
+    path('',views.home, name='home'),
+    
 ]
