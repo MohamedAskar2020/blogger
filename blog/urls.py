@@ -7,5 +7,5 @@ app_name = 'blog'
 
 urlpatterns =[
     
-    path('',),
+    #path('',),
 ]
