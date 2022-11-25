@@ -3,8 +3,14 @@
 {% block content %}
 {% load crispy_forms_tags %}
     <div class="border mb-3 p-3">
-        <img class="img-fluid rounded-circle border m-2" width="70px" src="{% static 'blog/images/man-person-icon.png' %}" alt="صورة الناشر" />
+        <img class="img-fluid rounded-circle border m-2" style="width: 120px; height: 120px;" src="{{user.profile.image.url}}" alt="صورة الناشر" />
         <span class="text-secondary">نشر في {{post.post_date|date:'d-m-Y'}}</span>
+        {% if post.author == user %}
+        <div class="form-group btn-editing">
+            <a href="{% url 'blog:update_post' post.id %}" class="btn btn-secondary">تحرير</a>
+            <a class="btn btn-danger" href="{% url 'blog:delete_post' post.id %}">حذف</a>
+        </div>
+        {% endif %}
         <h3><a class="text-dark">{{ post.title }}</a></h3>
         <p>{{ post.content }}</p>
     </div>

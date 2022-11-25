@@ -1,5 +1,5 @@
 <ul class="list-group-flush latest-post">
-    {% for post in posts %}
+    {% for post in l_posts %}
         <a href="{% url 'blog:detail' post.id %}" class="text-dark">
             <li class="list-group-item latest-post-item">
                 {{ post.title }}</li>

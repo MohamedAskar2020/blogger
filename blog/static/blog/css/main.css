@@ -49,3 +49,7 @@ body {
     border: 1px dashed #ccc;
 }
 /* end comment */
+.btn-editing, .back-btn {
+
+    float: left;
+}
